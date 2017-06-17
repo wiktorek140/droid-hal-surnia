@@ -7,6 +7,8 @@
 
 %define installable_zip 1
 
+%define community_adaptation 1
+
 %define straggler_files\
 /init.mmi.boot.sh\
 /init.mmi.touch.sh\

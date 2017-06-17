@@ -7,16 +7,9 @@
 
 %define installable_zip 1
 
-
 %define straggler_files\
 /init.mmi.boot.sh\
 /init.mmi.touch.sh\
-/init.mmi.dtv.sh\
-/init.mmi.early_boot.sh\
-/init.mmi.usb.sh\
-/init.surnia.sh\
-/selinux_version\
-/service_contexts\
 %{nil}
 
 %define additional_post_scripts \

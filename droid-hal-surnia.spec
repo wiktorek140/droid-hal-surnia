@@ -7,8 +7,7 @@
 
 %define installable_zip 1
 
-#Community HW adaptations need this
-#%define community_adaptation 1
+%define enable_kernel_update 1
 
 %define straggler_files\
 /init.mmi.boot.sh\
@@ -18,9 +17,11 @@
 /init.mmi.usb.sh\
 /init.surnia.sh\
 /selinux_version\
-/service_contexts
+/service_contexts\
+%{nil}
 
-
+%define android_config \
+#define QCOM_BSP 1\
 %{nil}
 
 %define additional_post_scripts \

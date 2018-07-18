@@ -3,7 +3,7 @@
 %define vendor motorola
 
 %define vendor_pretty Motorola
-%define device_pretty Moto E2
+%define device_pretty Moto E2 LTE
 
 %define installable_zip 1
 

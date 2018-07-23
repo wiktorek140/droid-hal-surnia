@@ -10,9 +10,20 @@
 %define community_adaptation 1
 
 %define straggler_files\
-/init.mmi.boot.sh\
-/init.mmi.touch.sh\
+/file_contexts.bin\
+/property_contexts\
+/selinux_version\
+/service_contexts\
+/bugreports\
+/d\
+/sdcard\
+/vendor\
 %{nil}
+
+%define android_config \
+#define QCOM_BSP 1\
+%{nil}
+
 
 %define additional_post_scripts \
 /usr/bin/groupadd-user inet || :\

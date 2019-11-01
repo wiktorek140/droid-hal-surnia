@@ -10,10 +10,17 @@
 %define community_adaptation 1
 
 %define straggler_files\
-/file_contexts.bin\
-/property_contexts\
-/selinux_version\
-/service_contexts\
+/nonplat_file_contexts\
+/nonplat_hwservice_contexts\
+/nonplat_property_contexts\
+/nonplat_seapp_contexts\
+/nonplat_service_contexts\
+/plat_file_contexts\
+/plat_hwservice_contexts\
+/plat_property_contexts\
+/plat_seapp_contexts\
+/plat_service_contexts\
+/vndservice_contexts\
 /bugreports\
 /d\
 /sdcard\
@@ -28,5 +35,7 @@
 %define additional_post_scripts \
 /usr/bin/groupadd-user inet || :\
 %{nil}
+
+%define droid_target_armv7hl 1
 
 %include rpm/dhd/droid-hal-device.inc
